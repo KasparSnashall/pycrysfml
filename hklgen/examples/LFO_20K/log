@@ -1,0 +1,50 @@
+/home/jel/build_pycrysfml/hklgen/LFO_20K
+[2, 0, 0, 0]
+[1.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+[-1.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+[0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+[0.0, 0.0, -1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+[-1.0, 0.0, -1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+[1.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+Traceback (most recent call last):
+  File "/usr/local/bin/bumps", line 5, in <module>
+    pkg_resources.run_script('bumps==0.7.4', 'bumps')
+  File "/usr/lib/python2.7/dist-packages/pkg_resources.py", line 528, in run_script
+    self.require(requires)[0].run_script(script_name, ns)
+  File "/usr/lib/python2.7/dist-packages/pkg_resources.py", line 1394, in run_script
+    execfile(script_filename, namespace, namespace)
+  File "/usr/local/lib/python2.7/dist-packages/bumps-0.7.4-py2.7-linux-x86_64.egg/EGG-INFO/scripts/bumps", line 20, in <module>
+    bumps.cli.main()
+  File "/usr/local/lib/python2.7/dist-packages/bumps-0.7.4-py2.7-linux-x86_64.egg/bumps/cli.py", line 525, in main
+    problem = initial_model(opts)
+  File "/usr/local/lib/python2.7/dist-packages/bumps-0.7.4-py2.7-linux-x86_64.egg/bumps/cli.py", line 423, in initial_model
+    problem = load_model(opts.args)
+  File "/usr/local/lib/python2.7/dist-packages/bumps-0.7.4-py2.7-linux-x86_64.egg/bumps/cli.py", line 66, in load_model
+    problem = load_problem(filename, options=options)
+  File "/usr/local/lib/python2.7/dist-packages/bumps-0.7.4-py2.7-linux-x86_64.egg/bumps/fitproblem.py", line 731, in load_problem
+    exec(code, ctx)
+  File "LuFeO3_20K.py", line 253, in <module>
+    problem = fit()
+  File "LuFeO3_20K.py", line 217, in fit
+    M = bumps.FitProblem(m)
+  File "/usr/local/lib/python2.7/dist-packages/bumps-0.7.4-py2.7-linux-x86_64.egg/bumps/fitproblem.py", line 348, in FitProblem
+    return BaseFitProblem(*args, **kw)
+  File "/usr/local/lib/python2.7/dist-packages/bumps-0.7.4-py2.7-linux-x86_64.egg/bumps/fitproblem.py", line 374, in __init__
+    self.model_reset()
+  File "/usr/local/lib/python2.7/dist-packages/bumps-0.7.4-py2.7-linux-x86_64.egg/bumps/fitproblem.py", line 389, in model_reset
+    all_parameters = parameter.unique(self.model_parameters())
+  File "/usr/local/lib/python2.7/dist-packages/bumps-0.7.4-py2.7-linux-x86_64.egg/bumps/parameter.py", line 688, in unique
+    pars = flatten(s)
+  File "/usr/local/lib/python2.7/dist-packages/bumps-0.7.4-py2.7-linux-x86_64.egg/bumps/parameter.py", line 607, in flatten
+    return reduce(lambda a,b: a + flatten(s[b]), sorted(s.keys()), [])
+  File "/usr/local/lib/python2.7/dist-packages/bumps-0.7.4-py2.7-linux-x86_64.egg/bumps/parameter.py", line 607, in <lambda>
+    return reduce(lambda a,b: a + flatten(s[b]), sorted(s.keys()), [])
+  File "/usr/local/lib/python2.7/dist-packages/bumps-0.7.4-py2.7-linux-x86_64.egg/bumps/parameter.py", line 613, in flatten
+    raise TypeError("don't understand type %s for %s"%(type(s), s))
+TypeError: don't understand type <type 'int'> for 0

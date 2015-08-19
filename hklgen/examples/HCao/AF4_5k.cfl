@@ -1,0 +1,28 @@
+!   FILE for FullProf Studio: generated automatically by FullProf 
+!Title:  MnWO4 Nuclear refinement, 17%-Co                                                                                                                                   
+SPACEG P 1 2/c 1
+CELL     4.770000    5.720000    4.920000  90.0000  90.9000  90.0000
+ATOM Mn1     MN      0.50000  0.68510  0.25000  0.63955  0.41600 
+ATOM Co      Co      0.50000  0.68510  0.25000  0.63955  0.08400
+ATOM W1      W       0.00000  0.18020  0.25000  0.79746  0.50000
+ATOM O1      O       0.21080  0.10374  0.94040  0.65534  1.00000
+ATOM O2      O       0.25070  0.37542  0.39410  0.71851  1.00000
+
+Mag_Structure
+lattice P -1
+kvect 0.50000 0.00000 0.00000
+!      n  nba1
+IRREPS 1   2  
+icomp   0 0
+SYMM X, Y, Z
+BASR       2       0       0       0       0       2
+BASI       0       0       0       0       0       0
+SYMM -X+1, -Y+1, -Z+1
+BASR    2       0       0       0       0       2
+BASI       0       0       0       0       0       0
+matom Mn1   MMN2   0.50000  0.68510  0.25000  0.78606  0.83236
+bfcoef     1  1     -0.724   0.944  0.0
+matom Co1   MCO2   0.50000  0.68510  0.25000  0.78606  0.16764
+bfcoef     1  1     -0.724   0.944  0.0
+
+End_Mag_Structure
