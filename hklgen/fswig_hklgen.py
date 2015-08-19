@@ -1268,7 +1268,7 @@ def plotPattern(peaks, background, ttObs, observed, ttMin, ttMax, ttStep,
             ttObs, observed = removeRange(ttObs, exclusions, observed)
         pylab.plot(ttObs, observed, '-go', linestyle="None", label="Observed",lw=1)
     pylab.plot(ttCalc, np.array(intensity), '-b', label="Calculated", lw=1)
-    intensityCalc = np.array(getIntensity(peaks, background, ttObs, base=base))
+    #intensityCalc = np.array(getIntensity(peaks, background, ttObs, base=base))
     pylab.errorbar(ttObs, np.array(observed), yerr=error, fmt=None, ecolor='g')
 #    pylab.fill_between(ttObs, observed, intensity, color="lightblue")
     pylab.xlabel(r"$2 \theta$")
